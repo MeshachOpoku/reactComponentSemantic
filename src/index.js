@@ -1,17 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import React and ReactDOM libraries
+//import { render } from '@testing-library/react';
+import React from  'react';
+import MReactDOM from 'react-dom';
+import DetailCustomer from './DetailCustomer';
+//import Comment from './Comment';
+//import CardAround from './CardAround';
+//create component
+const App=function() {
+  
+     return (
+<div>
+<DetailCustomer title="Add info" 
+ text="Adhere to current information"/>
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+<br></br>
+<DetailCustomer title="Add Detail" 
+ text="Adhere to the instuction on adding Details"/>
+</div>
+     ); // comment
+        
+  
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+        
+        
+
+};
+MReactDOM.render(
+    <App/> ,document.querySelector('#root')
+);//code wend
