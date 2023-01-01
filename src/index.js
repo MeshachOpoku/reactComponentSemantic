@@ -1,22 +1,19 @@
 // import React and ReactDOM libraries
 //import { render } from '@testing-library/react';
 import React from  'react';
-import MReactDOM from 'react-dom';
-import DetailCustomer from './DetailCustomer';
+import { createRoot } from 'react-dom/client';
+import Ui from './Ui';
+import Class1 from './Class1';
+import StateTime from './StateTime';
 //import Comment from './Comment';
 //import CardAround from './CardAround';
 //create component
 const App=function() {
   
      return (
-<div>
-<DetailCustomer title="Add info" 
- text="Adhere to current information"/>
+<div><Class1/>Well <StateTime/>HELLO<hr></hr><Ui/></div>
 
-<br></br>
-<DetailCustomer title="Add Detail" 
- text="Adhere to the instuction on adding Details"/>
-</div>
+
      ); // comment
         
   
@@ -24,7 +21,8 @@ const App=function() {
         
         
 
-};
-MReactDOM.render(
-    <App/> ,document.querySelector('#root')
-);//code wend
+}
+
+const my = document.getElementById('root');
+const web = createRoot(my); // new version 
+web.render(<App />);
