@@ -5,13 +5,19 @@ import { createRoot } from 'react-dom/client';
 import Ui from './Ui';
 import Class1 from './Class1';
 import StateTime from './StateTime';
+import Bloggersp1 from './Bloggersp1';
+import UserNotice from './UserNotice';
+import Season from './Season';
+
 //import Comment from './Comment';
 //import CardAround from './CardAround';
 //create component
 const App=function() {
   
      return (
-<div><Class1/>Well <StateTime/>HELLO<hr></hr><Ui/></div>
+<div>
+<hr></hr><Season/>
+</div>
 
 
      ); // comment
@@ -25,4 +31,4 @@ const App=function() {
 
 const my = document.getElementById('root');
 const web = createRoot(my); // new version 
-web.render(<App />);
+web.render(< App />);
